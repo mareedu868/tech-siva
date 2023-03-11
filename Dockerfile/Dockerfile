@@ -5,4 +5,4 @@ LABEL AUTHOR=Srini \
 RUN apt-get update -y
 RUN apt-get install -y nginx
 COPY 2129_crispy_kitchen /var/www/html/
-CMD ["nginx", "-g", "daemon off:"]
+CMD ["nginx", "-g", "daemon off;"]
